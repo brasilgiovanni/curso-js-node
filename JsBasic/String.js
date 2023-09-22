@@ -16,3 +16,22 @@ for (let i=0; i< palavra.length; i++) {
     }
 }console.log(`A palavra ${palavra} tem ${palavra.length} letras. E a quantidade de cada uma é apresentada abaixo:`)
 console.log(letras);
+
+
+// Vamos retirar os espaços de uma frase?
+const frase = "Ola Mundo!".replaceAll(" ", "");
+console.log("Minha frase sem espaços: " + frase);
+
+// Podemos fazer o replace para retirar as virgulas também
+console.log("///////////////////////////////////////////////")
+let fraseOriginal = "Ola, eu sou o Giovanni!"
+let fraseConcatenada = fraseOriginal.replaceAll(" ", "");
+let fraseSemVirgula = fraseConcatenada.replaceAll(",", "");
+let fraseSemExclamacao = fraseSemVirgula.replaceAll("!", "");
+let fraseLower = fraseSemExclamacao.toLowerCase();
+
+console.log("fraseOriginal: " + fraseOriginal)
+console.log("fraseConcatenada: " + fraseConcatenada)
+console.log("fraseSemVirgula: " + fraseSemVirgula)
+console.log("fraseSemExclamacao: " + fraseSemExclamacao)
+console.log("fraseLower: " + fraseLower)
