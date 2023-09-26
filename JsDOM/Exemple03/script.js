@@ -2,7 +2,7 @@
 
 const menu = document.querySelector('#menu');
 
-menu.addEventListener("click", (event) => {
+menu?.addEventListener("click", (event) => { // o Ponto de interrogação (?) faz uma conferência se de fato ele achou a tag "menu"
     const { target } = event;
     const body = document.querySelector("body");
 
